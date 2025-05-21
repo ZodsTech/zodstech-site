@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio | ZodsTech Global Limited</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f7f9fb;
+      color: #222;
+    }
+
+    header {
+      background-color: #002d72;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    .portfolio {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .project-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-image {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .project-content {
+      padding: 1rem;
+    }
+
+    .project-content h3 {
+      margin: 0;
+      color: #002d72;
+    }
+
+    .project-content p {
+      margin: 0.5rem 0;
+    }
+
+    .project-tech {
+      font-size: 0.9rem;
+      color: #666;
+      margin-bottom: 1rem;
+    }
+
+    .view-btn {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background: #002d72;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #eee;
+      margin-top: 4rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>ZodsTech Portfolio</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="portfolio">
+    <h2 style="text-align:center; color:#002d72;">Featured Projects</h2>
+    <div class="project-grid">
+
+      <div class="project-card">
+        <img src="images/heartbridge.jpg" alt="HeartBridge" class="project-image" />
+        <div class="project-content">
+          <h3>HeartBridge</h3>
+          <p>A romantic matchmaking platform with quizzes and compatibility tools.</p>
+          <div class="project-tech">React, HTML, CSS, AOS</div>
+          <a href="#" class="view-btn">View Project</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="images/pos.jpg" alt="ZodsPOS" class="project-image" />
+        <div class="project-content">
+          <h3>ZodsPOS</h3>
+          <p>Modern POS system for retail sales tracking and analytics.</p>
+          <div class="project-tech">React, Node.js, MongoDB</div>
+          <a href="#" class="view-btn">View Project</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="images/crm.jpg" alt="ZodsDesk CRM" class="project-image" />
+        <div class="project-content">
+          <h3>ZodsDesk CRM</h3>
+          <p>A dashboard to manage customer relations efficiently.</p>
+          <div class="project-tech">Vue.js, Firebase, TailwindCSS</div>
+          <a href="#" class="view-btn">View Project</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="images/edu.jpg" alt="TechEdu Academy" class="project-image" />
+        <div class="project-content">
+          <h3>TechEdu Academy</h3>
+          <p>Learn tech skills online via a simple, modern LMS.</p>
+          <div class="project-tech">HTML, Bootstrap, JS</div>
+          <a href="#" class="view-btn">View Project</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="images/homeauto.jpg" alt="SmartHomes NG" class="project-image" />
+        <div class="project-content">
+          <h3>SmartHomes NG</h3>
+          <p>Web platform to monitor and control smart devices at home.</p>
+          <div class="project-tech">Angular, SCSS, REST APIs</div>
+          <a href="#" class="view-btn">View Project</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 ZodsTech Global Limited. All rights reserved.
+  </footer>
+
+</body>
+</html>
