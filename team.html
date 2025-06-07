@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ZodsTech Global Limited</title>
+  <link rel="stylesheet" href="css/style.css" />
+  
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">[©ZT] BUILT 4 TECH!</h1>
+      <div style="font-weight: bold; font-size: 20px;">
+        <i class="fas fa-none"></i> 
+        <img src="images/zodstech-4-logo.png" alt="ZodsTech Logo" class="top-right-logo" />
+        
+        
+      </div>
+    </div>
+  </header>
+<div class="nav-wrapper">
+  
+  <!-- Top Wave -->
+  <svg viewBox="0 0 1440 100" style="display:block; transform: rotate(180deg); margin-bottom: -1px;" xmlns="http://www.w3.org/2000/svg">
+    <path fill="#ff3366" d="M0,0 C360,100 1080,0 1440,100 L1440,0 L0,0 Z"></path>
+  </svg>
+  <!-- Navigation Bar -->
+  <nav style="display: flex; justify-content: space-between; align-items: center; padding: 10px 20px; background-color: #ff3366; color: white; font-family: sans-serif;">
+    <ul style="list-style: none; display: flex; gap: 20px; margin: 0; padding: 0;">
+      <li><a href="index.html" style="color: white; text-decoration: none;"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="about.html" style="color: white; text-decoration: none;"><i class="fas fa-users"></i> About Us</a></li>
+      <li><a href="services.html" style="color: white; text-decoration: none;"><i class="fas fa-cogs"></i> Services</a></li>
+      <li><a href="contact.html" style="color: white; text-decoration: none;"><i class="fas fa-envelope"></i> Contact</a></li>
+
+      <!-- Clickable Dropdown -->
+<!-- Three Dots Dropdown -->
+<li style="position: relative;">
+  <a href="#" onclick="toggleDropdown(event)" style="color: white; text-decoration: none; font-size: 24px; padding: 10px;">
+    <i class="fas fa-ellipsis-v"></i>
+  </a>
+  <ul id="dropdownMenu" style="display: none; position: absolute; background-color: rgba(255, 255, 255, 0.85); color: #000; list-style: none; padding: 10px; margin: 0; right: 0; top: 35px; border-radius: 5px; box-shadow: 0 2px 8px rgba(0,0,0,0.2); z-index: 100;">
+    <li style="margin: 5px 0;"><a href="portfolio.html" style="text-decoration: none; color: #000;"><i class="fas fa-briefcase"></i> Portfolio</a></li>
+    <li style="margin: 5px 0;"><a href="quote.html" style="text-decoration: none; color: #000;"><i class="fas fa-file-signature"></i> Get A Quote</a></li>
+    <li style="margin: 5px 0;"><a href="testimonials.html" style="text-decoration: none; color: #000;"><i class="fas fa-comment-dots"></i> Testimonials</a></li>
+    <li style="margin: 5px 0;"><a href="team.html" style="text-decoration: none; color: #000;"><i class="fas fa-users-cog"></i> Our Team</a></li>
+    <li style="margin: 5px 0;"><a href="blog.html" style="text-decoration: none; color: #000;"><i class="fas fa-blog"></i> Blog</a></li>
+<li style="margin: 5px 0;"><a href="FAQ.html" style="text-decoration: none; color: #000;"><i class="fas fa-question-circle"></i> FAQs</a></li>
+<li style="margin: 5px 0;"><a href="privacy.html" style="text-decoration: none; color: #000;"><i class="fas fa-user-shield"></i> Privacy Policy</a></li>
+<li style="margin: 5px 0;"><a href="terms.html" style="text-decoration: none; color: #000;"><i class="fas fa-file-contract"></i> Terms of Service</a></li>
+  </ul>
+</li>
+    </ul>
+  </nav>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f8f9fa;
+      color: #333;
+    }
+
+    .team-hero {
+      background: linear-gradient(to right, #003366, #004408);
+      color: white;
+      padding: 4rem 1rem;
+      text-align: center;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .team-hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .team-hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 4rem 2rem;
+    }
+
+    .team-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      padding: 2rem;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: popUp 0.5s ease-in-out;
+    }
+
+    .team-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    .team-card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }#42445A
+
+    .team-card h3 {
+      margin: 0.5rem 0 0.2rem;
+      color: #003366;
+    }
+
+    .team-card p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+    
+    .marquee p {
+  color: #222;
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes popUp {
+      0% {
+        opacity: 0;
+        transform: scale(0.95);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="team-hero">
+    <h2>Meet Our Executive Team</h2>
+<marquee behavior="scroll" direction="left"
+  <small>@ ZodsTech, we are driven by passion, innovation, and a shared goal towards building tech that matters.</small>
+</marquee>
+  </section>
+<style>
+  marquee small {
+    background: linear-gradient(to right, #ff3366, #FFFFFF);
+    color: #222;
+  }
+</style>
+
+
+  <section class="team-grid">
+    <div class="team-card">
+      <img src="images/ceo.jpg" alt="CEO">
+      <h3>Chukwunonso Ozodi</h3>
+      <p>Founder & CEO</p>
+      <p>Visionary leader with deep love for tech and people empowerment.</p>
+    </div>
+    
+    <div class="team-card">
+  <img src="images/rmd.jpg" alt="RMD">
+  <h3>Roy Peterson</h3>
+  <p>Regional Managing Director</p>
+  <p>Ensuring coherence & quality delivery across our entire ZodsTech network.</p>
+</div>
+
+    <div class="team-card">
+      <img src="images/md.jpg" alt="MD">
+      <h3>Grace Chikodi</h3>
+      <p>Managing Director</p>
+      <p>Ensuring smooth operations and strategic growth across all units.</p>
+    </div>
+
+    <div class="team-card">
+      <img src="images/dev.jpg" alt="Developer">
+      <h3>David Kenneth O.</h3>
+      <p>Lead Developer</p>
+      <p>Code wizard behind every ZodsTech product experience.</p>
+    </div>
+
+    <div class="team-card">
+      <img src="images/sec.jpg" alt="Secretary">
+      <h3>Vyline Bunn</h3>
+      <p>Secretary</p>
+      <p>She’s the calm and coordination behind our dynamic team.</p>
+    </div>
+    
+    <div class="team-card">
+  <img src="images/sm.jpg" alt="SM">
+  <h3>Rachael Uche</h3>
+  <p>Sales Manager</p>
+  <p>Quality control expert.</p>
+</div>
+
+    <!-- Add more team members as needed -->
+  </section>
+   <script>
+   function toggleDropdown(event) {
+     event.preventDefault();
+     const dropdown = document.getElementById('dropdownMenu');
+     dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+   }
+   
+   // Optional: Close dropdown if clicked outside
+   window.addEventListener('click', function(e) {
+     const dropdown = document.getElementById('dropdownMenu');
+     if (!e.target.closest('li')) {
+       dropdown.style.display = 'none';
+     }
+   });
+ </script>
+ <footer>
+  &copy; 2025 ZodsTech Global Limited. All rights reserved.
+</footer>
+</body>
+</html>

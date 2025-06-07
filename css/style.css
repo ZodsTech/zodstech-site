@@ -1,0 +1,339 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f8f9fa;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+header {
+  background: #0d1b2a;
+  color: white;
+  padding: 1rem 0;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  background: linear-gradient(to right, #003366, #004408);
+  color: white;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+}
+
+.hero .btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background: #ff3366;
+  color: #FFFFFF;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.intro {
+  padding: 3rem 0;
+  text-align: center;
+}
+
+footer {
+  background: #0d1b2a;
+  color: #ccc;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+}
+
+.small-hero {
+  padding: 2rem 0;
+  
+  color: #fff;
+  text-align: center;
+}
+
+.services {
+  padding: 4rem 1rem;
+  background-color: #f4f4f4;
+}
+
+.service {
+  background: white;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  border-left: 5px solid #003366;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.service h3 {
+  margin-top: 0;
+  color: #003366;
+}
+
+.contact-form {
+  background: #fff;
+  padding: 4rem 1rem;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: auto;
+}
+
+.contact-form label {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.75rem;
+  margin-top: 0.25rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form button {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: #003366;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #00509e;
+}
+
+.contact-info {
+  background-color: #f4f4f4;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+/* Smooth card hover */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-right: 10px ;
+}
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+i {
+  margin-right: 8px;
+  color: #004aad;
+}
+
+nav ul li ul li {
+  padding: 5px 10px;
+  white-space: nowrap;
+}
+nav{
+background: linear-gradient(to bottom, #ff3366, #004408);
+}
+nav ul li ul li:hover {
+  background-color: #FFFFFF;
+}
+
+#dropdown-menu {
+  transition: all 0.3s ease;
+  opacity: 0;
+  pointer-events: none;
+}
+
+#dropdown-menu.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  word-wrap: break-word;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+section, .container {
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  section, .container {
+    padding: 10px;
+  }
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+button, a {
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+@keyframes logoAnimation {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+.top-right-logo {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 190px;
+  height: auto;
+  z-index: 999;
+  animation: logoAnimation 2s ease-in-out;
+}
+
+.logo {
+  margin: 0;
+  padding: 0;
+  height: 91px; /* set a fixed height for consistency */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: row; /* Don't change to column unless necessary */
+    align-items: center;
+  }
+}
+
+
+}
+
+header {
+  position: relative;
+}
+
+
+
+body {
+  overflow-x: hidden;
+}
+
+img, div, section {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+
+
+body {
+  overflow-x: hidden;
+}
+
+/* Ensure footer sticks to bottom when content is short */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+/* 🔒 Layout Fixes */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+footer {
+  margin-top: auto;
+}
+
+img, iframe, canvas {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+* {
+  box-sizing: border-box;
+}

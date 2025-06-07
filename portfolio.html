@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ZodsTech Global Limited</title>
+  <link rel="stylesheet" href="css/style.css" />
+  
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">[©ZT] BUILT 4 TECH!</h1>
+      <div style="font-weight: bold; font-size: 20px;">
+        <i class="fas fa-none"></i> 
+        <img src="images/zodstech-4-logo.png" alt="ZodsTech Logo" class="top-right-logo" />
+        
+        
+      </div>
+    </div>
+  </header>
+<div class="nav-wrapper">
+  
+  <!-- Top Wave -->
+  <svg viewBox="0 0 1440 100" style="display:block; transform: rotate(180deg); margin-bottom: -1px;" xmlns="http://www.w3.org/2000/svg">
+    <path fill="#ff3366" d="M0,0 C360,100 1080,0 1440,100 L1440,0 L0,0 Z"></path>
+  </svg>
+  <!-- Navigation Bar -->
+  <nav style="display: flex; justify-content: space-between; align-items: center; padding: 10px 20px; background-color: #ff3366; color: white; font-family: sans-serif;">
+    <ul style="list-style: none; display: flex; gap: 20px; margin: 0; padding: 0;">
+      <li><a href="index.html" style="color: white; text-decoration: none;"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="about.html" style="color: white; text-decoration: none;"><i class="fas fa-users"></i> About Us</a></li>
+      <li><a href="services.html" style="color: white; text-decoration: none;"><i class="fas fa-cogs"></i> Services</a></li>
+      <li><a href="contact.html" style="color: white; text-decoration: none;"><i class="fas fa-envelope"></i> Contact</a></li>
+
+      <!-- Clickable Dropdown -->
+<!-- Three Dots Dropdown -->
+<li style="position: relative;">
+  <a href="#" onclick="toggleDropdown(event)" style="color: white; text-decoration: none; font-size: 24px; padding: 10px;">
+    <i class="fas fa-ellipsis-v"></i>
+  </a>
+  <ul id="dropdownMenu" style="display: none; position: absolute; background-color: rgba(255, 255, 255, 0.85); color: #000; list-style: none; padding: 10px; margin: 0; right: 0; top: 35px; border-radius: 5px; box-shadow: 0 2px 8px rgba(0,0,0,0.2); z-index: 100;">
+    <li style="margin: 5px 0;"><a href="portfolio.html" style="text-decoration: none; color: #000;"><i class="fas fa-briefcase"></i> Portfolio</a></li>
+    <li style="margin: 5px 0;"><a href="quote.html" style="text-decoration: none; color: #000;"><i class="fas fa-file-signature"></i> Get A Quote</a></li>
+    <li style="margin: 5px 0;"><a href="testimonials.html" style="text-decoration: none; color: #000;"><i class="fas fa-comment-dots"></i> Testimonials</a></li>
+    <li style="margin: 5px 0;"><a href="team.html" style="text-decoration: none; color: #000;"><i class="fas fa-users-cog"></i> Our Team</a></li>
+    <li style="margin: 5px 0;"><a href="blog.html" style="text-decoration: none; color: #000;"><i class="fas fa-blog"></i> Blog</a></li>
+<li style="margin: 5px 0;"><a href="FAQ.html" style="text-decoration: none; color: #000;"><i class="fas fa-question-circle"></i> FAQs</a></li>
+<li style="margin: 5px 0;"><a href="privacy.html" style="text-decoration: none; color: #000;"><i class="fas fa-user-shield"></i> Privacy Policy</a></li>
+<li style="margin: 5px 0;"><a href="terms.html" style="text-decoration: none; color: #000;"><i class="fas fa-file-contract"></i> Terms of Service</a></li>
+  </ul>
+</li>
+    </ul>
+  </nav>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f7f9fb;
+      color: #222;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    .portfolio {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .project-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+.project-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 26px;
+  font-weight: bold;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.project-logo {
+  height: 80px;
+  width: auto;
+}
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-image {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .project-content {
+      padding: 1rem;
+    }
+
+    .project-content h3 {
+      margin: 0;
+      color: #002d72;
+    }
+
+    .project-content p {
+      margin: 0.5rem 0;
+    }
+
+    .project-tech {
+      font-size: 0.9rem;
+      color: #666;
+      margin-bottom: 1rem;
+    }
+
+    .view-btn {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background: #002d72;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    
+    .project-content h3 img {
+  vertical-align: middle;
+  border-radius: 5px;
+}
+
+/* Logo Styling */
+.portfolio-logo {
+  margin-left: 20px;
+  margin-top: 20px;
+  width: 80px;
+  height: auto;
+  margin-right: 10px;
+  vertical-align: middle;
+  opacity: 0;
+  transform: scale(0.8);
+  animation: fadeZoomIn 1.2s ease-in-out forwards;
+}
+
+/* Text alignment */
+.portfolio-item h3 {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+}
+
+/* Animation Keyframes */
+@keyframes fadeZoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.zodsdesk-logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  margin-left: 20px; /* adds space from page margin */
+  animation: slideIn 1s ease-in-out;
+}
+
+.zodsdesk-logo {
+  width: 80px;
+  height: auto;
+  animation: popUp 1s ease-out;
+}
+
+.zodsdesk-text {
+  font-size: 26px;
+  font-weight: bold;
+  color: #003366; /* Cool blue */
+  font-family: 'Segoe UI', sans-serif;
+  animation: fadeInRight 1s ease-in-out;
+}
+
+.zodsdesk-text span {
+  color: #00c8a4; /* Complementary soft green */
+}
+
+@keyframes slideIn {
+  from { transform: translateX(-40px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes popUp {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes fadeInRight {
+  from { opacity: 0; transform: translateX(20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.acehub-logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;/* adds space from page margin */
+  animation: slideIn 1s ease-in-out;
+  border-radius: 5px;
+}
+
+.acehub-logo {
+  width: 80px;
+  height: auto;
+  animation: popUp 1s ease-out;
+}
+
+.acehub-text {
+  font-size: 26px;
+  font-weight: bold;
+  color: #0d3b66; /* Deep academic blue */
+  font-family: 'Segoe UI', sans-serif;
+  animation: fadeInRight 1s ease-in-out;
+  
+}
+
+.acehub-text span {
+  color: #e07a5f; /* Elegant academic coral */
+}
+
+@keyframes slideIn {
+  from { transform: translateX(-40px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes popUp {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes fadeInRight {
+  from { opacity: 0; transform: translateX(20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.smarthomes-logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 40px;/* Space from the page margin */
+  animation: slideIn 1s ease-in-out;
+}
+
+.smarthomes-logo {
+  width: 80px;
+  height: auto;
+  animation: popUp 1s ease-out;
+}
+
+.smarthomes-text {
+  font-size: 26px;
+  font-weight: bold;
+  color: #003366; /* Tech Blue */
+  font-family: 'Segoe UI', sans-serif;
+  animation: fadeInRight 1s ease-in-out;
+  
+}
+
+.smarthomes-text span {
+  color: #00e676; /* Smart Green */
+}
+
+/* Animations */
+@keyframes slideIn {
+  from { transform: translateX(-40px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes popUp {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes fadeInRight {
+  from { opacity: 0; transform: translateX(20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.project-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 26px;
+  font-weight: bold;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.project-logo {
+  height: 80px;
+  width: auto;
+}
+
+/* Style for highlighted h3 titles */
+.highlighted-title {
+  display: flex;
+  font-size: 26px;
+  font-weight: bold;
+align-items: center;
+gap: 10px;
+  
+
+  color: #003366;
+  font-family: 'Segoe UI', sans-serif;
+  margin-right:20px;
+}
+
+/* Clear spacing at the bottom */
+body {
+  padding-bottom: 00px;
+}
+
+.project-content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+/* Grid Fix to Avoid Overlap or Congestion */
+.project-grid {
+  margin-bottom: 30px;
+}
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f8f9fa;
+      color: #333;
+    }
+
+    .team-hero {
+      background: linear-gradient(to right, #003366, #004408);
+      color: white;
+      padding: 4rem 1rem;
+      text-align: center;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .team-hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .team-hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 4rem 2rem;
+    }
+
+    .team-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      padding: 2rem;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: popUp 0.5s ease-in-out;
+    }
+
+    .team-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    .team-card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }#42445A
+
+    .team-card h3 {
+      margin: 0.5rem 0 0.2rem;
+      color: #003366;
+    }
+
+    .team-card p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes popUp {
+      0% {
+        opacity: 0;
+        transform: scale(0.95);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+
+/* Footer (if any) should have margin-top or position) */
+footer {
+  margin-top: 30px;
+  
+}
+  </style>
+<body>
+  
+  <section class="team-hero">
+  <h1>Our Portfolio</h1>
+    <style>
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  background-color: #ff3366; /* Optional background */
+  color: #222;
+}
+
+.marquee-text {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+</style>
+
+<div class="marquee-container">
+  <div class="marquee-text">
+<small>On This Page, You Will Find Some Of Our Featured Projects.</small>
+  </div>
+
+  </section>
+  
+</section>
+
+  <section class="portfolio">
+ 
+    <div class="project-grid">
+
+      <div class="project-card"
+        <div class="project-content">
+         <h3 style="display: flex; align-items: center; gap: 10px;">
+  <img src="images/HeartBridge.png" alt="HeartBridge Logo" style="height: 80px; width: auto;" <h3 class="highlighted-title">HeartBridge</h3>
+          <p>A romantic matchmaking platform with quizzes and compatibility tools.</p>
+          <div class="project-tech">React, HTML, CSS, AOS</div>
+          <a href="#" class="view-btn">View Project</a>
+        </div>
+        
+      </div>
+      
+      <div class="project-card"
+       <div class="portfolio-item animated-logo">
+  <img src="images/zodspos-logo.png" alt="ZodsPOS Logo" class="portfolio-logo">
+  <h3 style="color: #003366;">
+    <h3 class="highlighted-title">ZodsPOS</h3>
+  
+  <p>Modern POS system for retail sales tracking and analytics.</p>
+          <div class="project-tech">React, Node.js, MongoDB</div>
+          <a href="#" class="view-btn">View Project</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+<div class="zodsdesk-logo-container">
+  <img src="images/zodsdesk-logo.png" alt="ZodsDesk CRM Logo" class="zodsdesk-logo">
+  <h3 class="zodsdesk-text">ZodsDesk <span>CRM</span></h3>
+</div>
+          <p>A dashboard to manage customer relations efficiently.</p>
+          <div class="project-tech">Vue.js, Firebase, TailwindCSS</div>
+          <a href="#" class="view-btn">View Project</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="acehub-logo-container">
+  <img src="images/ace-hub-logo.png" alt="Ace Scholarly Hub Logo" class="acehub-logo">
+  <h3 class="acehub-text">Ace Scholarly <span>Hub</span></h3>
+</div>
+          <p>We solve all student problems about National Open University of Nigeria, (NOUN) and other Nigerian Universities.</p>
+          <div class="project-tech">Final year projects, Seminars, SIWES, TMAs, Business Creation and Growth....</div>
+          <a href="#" class="view-btn">View Project</a>
+        </div>
+                </div>
+        
+        <div class="project-card">
+          <div class="smarthomes-logo-container">
+            
+            <img src="images/smarthomes-logo.png" alt="SmartHomes NG Logo" class="smarthomes-logo">
+            <h3 class="smarthomes-text">SmartHomes <span>NG</span></h3>
+          </div>
+          <p>Web platform to monitor and control smart devices at home.</p>
+          <div class="project-tech">Angular, SCSS, REST APIs</div>
+          <a href="#" class="view-btn">View Project</a>
+        </div>
+        </div>
+        </div>
+      
+  </section>
+
+  <!-- Dropdown Toggle Script -->
+  <script>
+    function toggleDropdown(event) {
+      event.preventDefault();
+      const dropdown = document.getElementById('dropdownMenu');
+      dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+    }
+    
+    // Optional: Close dropdown if clicked outside
+    window.addEventListener('click', function(e) {
+      const dropdown = document.getElementById('dropdownMenu');
+      if (!e.target.closest('li')) {
+        dropdown.style.display = 'none';
+      }
+    });
+  </script>
+  <main>
+  <!-- All your main content here -->
+</main>
+<footer>
+  &copy; 2025 ZodsTech Global Limited. All rights reserved.
+</footer>
+</body>
+</html>

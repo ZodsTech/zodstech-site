@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ZodsTech Global Limited</title>
+  <link rel="stylesheet" href="css/style.css" />
+  
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">[©ZT] BUILT 4 TECH!</h1>
+      <div style="font-weight: bold; font-size: 20px;">
+        <i class="fas fa-none"></i> 
+        <img src="images/zodstech-4-logo.png" alt="ZodsTech Logo" class="top-right-logo" />
+        
+        
+      </div>
+    </div>
+  </header>
+
+  
+  <!-- Top Wave -->
+  <svg viewBox="0 0 1440 100" style="display:block; transform: rotate(180deg); margin-bottom: -1px;" xmlns="http://www.w3.org/2000/svg">
+    <path fill="#ff3366" d="M0,0 C360,100 1080,0 1440,100 L1440,0 L0,0 Z"></path>
+  </svg>
+  <!-- Navigation Bar -->
+  <nav style="display: flex; justify-content: space-between; align-items: center; padding: 10px 20px; background-color: #ff3366; color: white; font-family: sans-serif;">
+    <ul style="list-style: none; display: flex; gap: 20px; margin: 0; padding: 0;">
+      <li><a href="index.html" style="color: white; text-decoration: none;"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="about.html" style="color: white; text-decoration: none;"><i class="fas fa-users"></i> About Us</a></li>
+      <li><a href="services.html" style="color: white; text-decoration: none;"><i class="fas fa-cogs"></i> Services</a></li>
+      <li><a href="contact.html" style="color: white; text-decoration: none;"><i class="fas fa-envelope"></i> Contact</a></li>
+
+      <!-- Clickable Dropdown -->
+<!-- Three Dots Dropdown -->
+<li style="position: relative;">
+  <a href="#" onclick="toggleDropdown(event)" style="color: white; text-decoration: none; font-size: 24px; padding: 10px;">
+    <i class="fas fa-ellipsis-v"></i>
+  </a>
+  <ul id="dropdownMenu" style="display: none; position: absolute; background-color: rgba(255, 255, 255, 0.85); color: #000; list-style: none; padding: 10px; margin: 0; right: 0; top: 35px; border-radius: 5px; box-shadow: 0 2px 8px rgba(0,0,0,0.2); z-index: 100;">
+    <li style="margin: 5px 0;"><a href="portfolio.html" style="text-decoration: none; color: #000;"><i class="fas fa-briefcase"></i> Portfolio</a></li>
+    <li style="margin: 5px 0;"><a href="quote.html" style="text-decoration: none; color: #000;"><i class="fas fa-file-signature"></i> Get A Quote</a></li>
+    <li style="margin: 5px 0;"><a href="testimonials.html" style="text-decoration: none; color: #000;"><i class="fas fa-comment-dots"></i> Testimonials</a></li>
+    <li style="margin: 5px 0;"><a href="team.html" style="text-decoration: none; color: #000;"><i class="fas fa-users-cog"></i> Our Team</a></li>
+    <li style="margin: 5px 0;"><a href="blog.html" style="text-decoration: none; color: #000;"><i class="fas fa-blog"></i> Blog</a></li>
+<li style="margin: 5px 0;"><a href="FAQ.html" style="text-decoration: none; color: #000;"><i class="fas fa-question-circle"></i> FAQs</a></li>
+<li style="margin: 5px 0;"><a href="privacy.html" style="text-decoration: none; color: #000;"><i class="fas fa-user-shield"></i> Privacy Policy</a></li>
+<li style="margin: 5px 0;"><a href="terms.html" style="text-decoration: none; color: #000;"><i class="fas fa-file-contract"></i> Terms of Service</a></li>
+  </ul>
+</li>
+    </ul>
+  </nav>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f9f9f9;
+      color: #222;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    .testimonials-section {
+      padding: 2rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .testimonials-section h2 {
+      text-align: center;
+      color: #002d72;
+      margin-bottom: 1rem;
+    }
+
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .testimonial-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+      padding: 1.5rem;
+    }
+
+    .testimonial-card p {
+      font-style: italic;
+      margin-bottom: 1rem;
+    }
+
+    .testimonial-author {
+      font-weight: bold;
+      color: #002d72;
+    }
+
+    .testimonial-role {
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f8f9fa;
+      color: #333;
+      padding: 0;
+    }
+
+    .team-hero {
+      background: linear-gradient(to right, #003366, #004408);
+      color: white;
+      padding: 4rem 1rem;
+      text-align: center;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .team-hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+  
+
+
+    .team-hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 4rem 2rem;
+    }
+
+    .team-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      padding: 2rem;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: popUp 0.5s ease-in-out;
+    }
+
+    .team-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    .team-card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }
+
+    .team-card h3 {
+      margin: 0.5rem 0 0.2rem;
+      color: #003366;
+    }
+
+    .team-card p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes popUp {
+      0% {
+        opacity: 0;
+        transform: scale(0.95);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  </style>
+    <section class="team-hero">
+    <h2 data-aos="zoom-in" data-aos-duration="2000">What Our Clients Say...</h2>
+     <style>
+     
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  background-color: #ff3366;
+  color: #222; /* Optional background */
+  
+  }
+
+.marquee-text {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+</style>
+
+<div class="marquee-container">
+  <div class="marquee-text">
+   <small>@ ZodsTech, Customer Is King! & Quality Is Our Trademark!!</small>
+  </div>
+  </div>
+  
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="portfolio">
+  <div class="testimonial-grid">
+    
+    <div class="testimonial-card" data-aos="fade-right" data-aos-delay="500">
+      <p>"ZodsTech built us a sleek and responsive site that skyrocketed our brand visibility. Highly professional!"</p>
+      <div class="testimonial-author" data-aos="flip-left" data-aos-delay="700">Chika Umeh</div>
+      <div class="testimonial-role">CEO, VisionFoods Nigeria</div>
+    </div>
+    
+    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="600">
+      <p>"Their POS solution transformed our retail operations. Smooth setup, solid support."</p>
+      <div class="testimonial-author" data-aos="flip-left" data-aos-delay="800">John Fada</div>
+      <div class="testimonial-role">Manager, QuickPoint Stores</div>
+    </div>
+    
+    <div class="testimonial-card" data-aos="fade-left" data-aos-delay="700">
+      <p>"ZodsTech's Smart Home integration is a dream come true. Clean install, user-friendly interface!"</p>
+      <div class="testimonial-author" data-aos="flip-left" data-aos-delay="900">Faith Alonge</div>
+      <div class="testimonial-role">Real Estate Consultant</div>
+    </div>
+    
+    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="900">
+      <p>"Their coding bootcamp gave me real-world tech skills. I landed my first job in 4 months."</p>
+      <div class="testimonial-author" data-aos="flip-left" data-aos-delay="900">Kelvin Ndukwe</div>
+      <div class="testimonial-role">Frontend Developer</div>
+    </div>
+    
+  </div>
+</section>
+
+  <!-- Dropdown Toggle Script -->
+  <script>
+    function toggleDropdown(event) {
+      event.preventDefault();
+      const dropdown = document.getElementById('dropdownMenu');
+      dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+    }
+    
+    // Optional: Close dropdown if clicked outside
+    window.addEventListener('click', function(e) {
+      const dropdown = document.getElementById('dropdownMenu');
+      if (!e.target.closest('li')) {
+        dropdown.style.display = 'none';
+      }
+    });
+  </script>
+  <!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    once: true, // Animates only once when scrolled into view
+    duration: 1000, // Animation duration in ms
+    easing: 'ease-in-out',
+  });
+</script>
+ <footer>
+   &copy; 2025 ZodsTech Global Limited. All rights reserved.
+ </footer>
+</body>
+</html>

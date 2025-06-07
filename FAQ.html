@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ZodsTech Global Limited</title>
+  <link rel="stylesheet" href="css/style.css" />
+  
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">[©ZT] BUILT 4 TECH!</h1>
+      <div style="font-weight: bold; font-size: 20px;">
+        <i class="fas fa-none"></i> 
+        <img src="images/zodstech-4-logo.png" alt="ZodsTech Logo" class="top-right-logo" />
+        
+        
+      </div>
+    </div>
+  </header>
+  
+  <!-- Add inside <head> tag if not already present -->
+<style>
+  /* Typewriter effect */
+  .typewriter h3 {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: .15em solid none;
+    animation: typing 3s steps(30, end), blink-caret .75s step-end infinite;
+  }
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: none }
+  }
+  
+  
+</style>
+  
+  <style>
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+    @keyframes blink {
+      50% { border-color: transparent; }
+    }
+    .typewriter h3, .typewriter p {
+      overflow: hidden;
+      border-right: 0.15em solid none;
+      white-space: nowrap;
+      margin: 0 auto;
+      letter-spacing: .15em;
+      animation:
+        typing 4s steps(40, end),
+        blink .75s step-end infinite;
+    }
+
+    .slide-in {
+      animation: slideIn 1s ease-out forwards;
+    }
+    @keyframes slideIn {
+      from {
+        transform: translateX(100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<div class="nav-wrapper">
+  
+  <!-- Top Wave -->
+  <svg viewBox="0 0 1440 100" style="display:block; transform: rotate(180deg); margin-bottom: -1px;" xmlns="http://www.w3.org/2000/svg">
+    <path fill="#ff3366" d="M0,0 C360,100 1080,0 1440,100 L1440,0 L0,0 Z"></path>
+  </svg>
+
+  <!-- Navigation Bar -->
+  <nav style="display: flex; justify-content: space-between; align-items: center; padding: 10px 20px; background-color: #ff3366; color: white; font-family: sans-serif;">
+    <ul style="list-style: none; display: flex; gap: 20px; margin: 0; padding: 0;">
+      <li><a href="index.html" style="color: white; text-decoration: none;"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="about.html" style="color: white; text-decoration: none;"><i class="fas fa-users"></i> About Us</a></li>
+      <li><a href="services.html" style="color: white; text-decoration: none;"><i class="fas fa-cogs"></i> Services</a></li>
+      <li><a href="contact.html" style="color: white; text-decoration: none;"><i class="fas fa-envelope"></i> Contact</a></li>
+      <li style="position: relative;">
+        <a href="#" onclick="toggleDropdown(event)" style="color: white; text-decoration: none; font-size: 24px; padding: 10px;">
+          <i class="fas fa-ellipsis-v"></i>
+        </a>
+        <ul id="dropdownMenu" style="display: none; position: absolute; background-color: rgba(255, 255, 255, 0.85); color: #000; list-style: none; padding: 10px; margin: 0; right: 0; top: 35px; border-radius: 5px; box-shadow: 0 2px 8px rgba(0,0,0,0.2); z-index: 100;">
+          <li style="margin: 5px 0;"><a href="portfolio.html" style="text-decoration: none; color: #000;"><i class="fas fa-briefcase"></i> Portfolio</a></li>
+          <li style="margin: 5px 0;"><a href="quote.html" style="text-decoration: none; color: #000;"><i class="fas fa-file-signature"></i> Get A Quote</a></li>
+          <li style="margin: 5px 0;"><a href="testimonials.html" style="text-decoration: none; color: #000;"><i class="fas fa-comment-dots"></i> Testimonials</a></li>
+          <li style="margin: 5px 0;"><a href="team.html" style="text-decoration: none; color: #000;"><i class="fas fa-users-cog"></i> Our Team</a></li>
+          <li style="margin: 5px 0;"><a href="blog.html" style="text-decoration: none; color: #000;"><i class="fas fa-blog"></i> Blog</a></li>
+<li style="margin: 5px 0;"><a href="FAQ.html" style="text-decoration: none; color: #000;"><i class="fas fa-question-circle"></i> FAQs</a></li>
+<li style="margin: 5px 0;"><a href="privacy.html" style="text-decoration: none; color: #000;"><i class="fas fa-user-shield"></i> Privacy Policy</a></li>
+<li style="margin: 5px 0;"><a href="terms.html" style="text-decoration: none; color: #000;"><i class="fas fa-file-contract"></i> Terms of Service</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <section class="hero small-hero">
+    <div class="container">
+      <h2>Frequently Asked Questions (FAQs)</h2>
+       <style>
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  background-color: #ff3366;
+  color: #222;/* Optional background */
+}
+
+.marquee-text {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+</style>
+
+<div class="marquee-container">
+  <div class="marquee-text">
+<small>Your concerns are valid. Here are our answers.</small>
+  </div>
+
+  </section>
+  
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+  
+
+    .faq-container {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    .faq {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+      padding: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .faq:hover {
+      transform: scale(1.01);
+    }
+
+    .faq h3 {
+      color: #3b82f6;
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="faq-container">
+    <div class="faq">
+      <h3>1. What services does ZodsTech offer?</h3>
+      <p>We offer web development, software solutions, tech consulting, digital branding, SEO, UI/UX design, and custom enterprise systems. Basically, if it involves tech—we’ve got you covered.</p>
+    </div>
+
+    <div class="faq">
+      <h3>2. Is ZodsTech a registered company?</h3>
+      <p>Absolutely. ZodsTech is fully registered with the Corporate Affairs Commission of Nigeria and recognized for operating in the digital solutions industry.</p>
+    </div>
+
+    <div class="faq">
+      <h3>3. Why should I trust ZodsTech with my project?</h3>
+      <p>We combine passion, professionalism, and proven experience. With a dedicated team and a CEO who’s hands-on with every major project, we don’t just deliver—we exceed expectations.</p>
+    </div>
+
+    <div class="faq">
+      <h3>4. How long does it take to develop a website?</h3>
+      <p>It depends on the complexity. A standard site takes 5-10 working days. For more advanced platforms like e-commerce or dashboards, 2-4 weeks is ideal.</p>
+    </div>
+
+    <div class="faq">
+      <h3>5. What is your pricing model?</h3>
+      <p>We offer flexible packages—fixed pricing, hourly billing, and retainer models—depending on the scope and duration of your project.</p>
+    </div>
+
+    <div class="faq">
+      <h3>6. Do you provide support after development?</h3>
+      <p>Yes! We provide 1–3 months of free post-launch support and offer affordable maintenance plans thereafter.</p>
+    </div>
+
+    <div class="faq">
+      <h3>7. Can I see samples of your past work?</h3>
+      <p>Certainly! Visit our <a href="portfolio.html">portfolio page</a> to see real, live projects we’ve executed for clients across industries.</p>
+    </div>
+
+    <div class="faq">
+      <h3>8. What makes ZodsTech different?</h3>
+      <p>Our culture. We don’t just code—we care. We blend creativity, innovation, and technology to make products that actually solve real problems.</p>
+    </div>
+
+    <div class="faq">
+      <h3>9. Can I meet with your team before committing?</h3>
+      <p>Yes, either physically (if you’re near) or virtually. We believe chemistry matters in business partnerships.</p>
+    </div>
+
+    <div class="faq">
+      <h3>10. What industries do you serve?</h3>
+      <p>We’ve worked with startups, schools, healthcare, agriculture, logistics, non-profits, and e-commerce brands.</p>
+    </div>
+
+    <div class="faq">
+      <h3>11. Do you sign NDAs?</h3>
+      <p>Absolutely. Your idea is safe with us. We’re happy to sign a Non-Disclosure Agreement before any technical discussions.</p>
+    </div>
+
+    <div class="faq">
+      <h3>12. Do you redesign old websites?</h3>
+      <p>Yes, and we love giving legacy websites a modern face and faster functionality that aligns with today’s standards.</p>
+    </div>
+
+    <div class="faq">
+      <h3>13. How experienced is your team?</h3>
+      <p>We have over 7 years of collective experience across web development, UI/UX, and tech strategy. Our developers and designers are constantly evolving with industry trends.</p>
+    </div>
+
+    <div class="faq">
+      <h3>14. Can you work with my existing team?</h3>
+      <p>Definitely. We collaborate well with internal IT or business teams to deliver faster and more aligned outcomes.</p>
+    </div>
+
+    <div class="faq">
+      <h3>15. What technologies do you use?</h3>
+      <p>HTML, CSS, JavaScript (React, Vue), Node.js, Python, Laravel, PHP, WordPress, MongoDB, MySQL, Firebase, and more. We pick the best stack for each project.</p>
+    </div>
+
+    <div class="faq">
+      <h3>16. Do you create mobile apps?</h3>
+      <p>Yes, both native (Android/iOS) and cross-platform (React Native, Flutter) mobile applications.</p>
+    </div>
+
+    <div class="faq">
+      <h3>17. Do you outsource your work?</h3>
+      <p>No. Everything is developed in-house to maintain quality, security, and accountability.</p>
+    </div>
+
+    <div class="faq">
+      <h3>18. Can you help with branding and logos?</h3>
+      <p>Yes, we offer digital branding services including logo design, brand kits, typography, and colour schemes tailored to your niche.</p>
+    </div>
+
+    <div class="faq">
+      <h3>19. Do you host websites?</h3>
+      <p>We don’t directly host, but we set up your hosting and domain with trusted providers. We’ll guide you every step of the way.</p>
+    </div>
+
+    <div class="faq">
+      <h3>20. Can I make payments in installments?</h3>
+      <p>Yes, we allow 50% upfront and the rest upon completion, or monthly phased payments—depending on project type.</p>
+    </div>
+
+    <div class="faq">
+      <h3>21. Can I update my website myself after it's built?</h3>
+      <p>If it's built with CMS like WordPress or Wix—absolutely! We also provide walkthrough videos and documentation for custom sites.</p>
+    </div>
+
+    <div class="faq">
+      <h3>22. How do I request a quote?</h3>
+      <p>Just visit our <a href="quote.html">Get A Quote</a> page, fill in the form, and we’ll get back to you with a tailored estimate within 24 hours.</p>
+    </div>
+
+    <div class="faq">
+      <h3>23. What happens if I’m not satisfied?</h3>
+      <p>We involve you throughout the development process. But if you're not satisfied, we revise until you are—or refund your balance.</p>
+    </div>
+
+    <div class="faq">
+      <h3>24. Can ZodsTech handle large-scale enterprise projects?</h3>
+      <p>Yes, we’ve built scalable platforms for high-traffic environments. We scale teams and infrastructure as needed to meet enterprise needs.</p>
+    </div>
+
+    <div class="faq">
+      <h3>25. How do I contact ZodsTech?</h3>
+      <p>Visit our <a href="contact.html">Contact</a> page. You can reach us via phone, email, or WhatsApp. We're always one message away!</p>
+    </div>
+  </div>
+<footer>
+  &copy; 2025 ZodsTech Global Limited. All rights reserved.
+</footer>
+  <!-- Dropdown Toggle Script -->
+  <script>
+    function toggleDropdown(event) {
+      event.preventDefault();
+      const dropdown = document.getElementById('dropdownMenu');
+      dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+    }
+    
+    window.addEventListener('click', function(e) {
+      const dropdown = document.getElementById('dropdownMenu');
+      if (!e.target.closest('li')) {
+        dropdown.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>
